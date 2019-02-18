@@ -1,0 +1,79 @@
+//UNIX test 
+Thursday 2-16-17
+
+Basic Castleton test
+
+EVERTHING* is part of the file system in linux/unix
+
+/  root folder is the starting point
+/dev
+	if driver is successful usually se an added "folder" in dev
+/bin
+	Executable for everyone
+/sbin
+	Executable for the super user
+/home
+	user account information
+/etc
+	Misc. configuration stuff
+/dev/rand
+	file you can read data from and gives you random bytes
+	
+* Swap space
+
+Permissions, Read, Write, Execute
+			You yourself, Group, Everyone
+Fundemental to OS.
+Execute a Program with Appropriate Permissions
+
+
+Commands
+ls
+	-a
+		
+	-l
+		look at permissions
+	dirent (Directory Entry)
+shutdown
+	-r now --- -h -now
+	
+cd
+		../../../folder/otherfolder
+		/
+			goes to root
+		nothing
+			goes to home
+pwd
+	where you are currently at
+mkdir
+ln -s ...
+	creates a link to another file
+	a single file can appear to be in more than one place
+	
+cp
+	Always at least two locations
+	copy c:\Text.txt
+	cp ../text.txt ./
+vi
+	:wq
+	or just :q
+emacs
+	ask Dr. MacEvoy
+Drive
+	/dev/sdb
+Partitions
+	/dev/sdb1 /dev/sdb2
+Mounting
+	/media/<user>/device
+Redirection
+	>>
+		appending
+	>
+		blank out the file
+	<
+		input to a file and replace everything inside with following command
+	2>>
+		cerror
+	2>
+		cerror with rewriting
+

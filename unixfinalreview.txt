@@ -1,0 +1,63 @@
+///UNIX FINAL REVIEW
+
+about 60 multiple choice questions
+All content covered is fair game
+about 66% will be topics covered on the past tests
+
+New Questions/Concepts
+	
+	What is an Executable?
+		Does something
+		Takes command line arguments
+		create 3 streams
+			stdin, cin
+			stdout, cout
+			stderr, cerr
+			redirection
+				>
+				2>
+				
+		Returns an integer to the OS
+		No extension is needed to be an executable.
+		What is a thread?
+			Shares i/o, code Segment, Data Segment with executableand 
+				other threads of that executable
+			Stack is uniqe to each thread
+		
+	What is a shared Object/DLL?
+		Does something
+		Multiple files can use it.
+		Multiple entry points, Each function is an entry point
+	
+	What is a Kernel?
+		Commands
+			insmode
+			rmmod
+			modprobe
+			lsmod
+			dmesg
+		Filesystems
+		Users
+		Permission
+		Executables
+			Drivers, Bit of code for a specific device/package
+		Output errors in dmesg
+	
+	What is a Kernel Object
+		Shared Object for the kernel
+		Can be added or removed without recompiling the kernel
+		Boundary between user space permission and root user permission
+		
+What is a LAMP stack?
+	Linux Apache MySQL PHP (Perl)
+	
+What is an NGINX server?
+	Alternative to the Apache in LAMP stack
+	To defend against "Slow Lorus" like attacks
+	
+Zone Minder
+	Embedded Linux using motion
+	
+
+
+

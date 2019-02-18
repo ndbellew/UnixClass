@@ -1,0 +1,85 @@
+Everything is fair game up to Kernel
+25% from earlier set
+cp,mvrm,ln.vi, emacs, cfdisk, sudo, cat, tail,less,more
+Everything is part of the file system
+all file systems have perimissions based on 
+	users, Groups
+		sudo exists because of permissions
+chown
+	ls
+	sudo chown ...
+	ls
+	//Change ownership of the file
+chmod
+	ls
+	sudo chmod 777 or +-w
+	ls
+	//change permissions on file objects and adjust special flags to run as exe. or just a txt.
+
+why you should restrict permissions
+passwd
+		Changes your Password
+setserial or stty
+	baud rates and number of bits for serial devices
+	Dialout exists for "modems"/serial ports
+dmesg
+	Every message from "kernel"
+	dmesg | grep -i wifi
+	Boot stalls can be diagnosed
+uname
+		Name version system
+dd
+	Disk duplicate
+	byte for byte copy
+	difference between dd /dev/sda /dev/sda1
+du
+	reports file disk usage
+	Windirstat
+	Disk Usage Analyzer
+		Dirent + stat + visual
+	du -h human output
+df
+	disk free
+date Sets the date and time of the system.
+	ntp Network Time Protocol
+diff Difference of two files
+	Generate a patch
+	Meld, Visual Diff
+grep Get Regular Expression		*
+	Search anything for an pattern
+	-i case insensitive
+	quoting
+	libregex
+env,export 		*
+	OS=LINUX
+	echo $OS
+tar Tape Archive
+	making it a copy of the folder structure and tack on every 
+				kind file onto the end of that one
+		Permission, folder structure, date/time
+		and take files together
+	tar -z one step further and comporesses using GZip
+	.tar
+	.tgz -z
+gzip Compresses files
+	.gz
+ifconfig
+	Like windows ipconfig
+	Network Adapteretails
+	/etc/network/interfaces
+		configuration for adapter
+	nmclient/nm-connection-editor
+	WEP as part of ifconfig
+	WPA wpa_supplicant
+		Shared Object
+	There is a way to set passwords but not in clear text
+iwlist -Wireless AP
+nslookup -Looks up who owns a server name, URL name
+traceroute -Seeing which IP addresses are used between source and destination
+netstat -Which executable is using which network ports/sockets
+
+	
+	
+	
+	
+

@@ -1,0 +1,5 @@
+chmod 664 two.txt
+echo "three.txt"
+ls -la
+chmod 664 three.txt
+

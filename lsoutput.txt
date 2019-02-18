@@ -1,0 +1,4 @@
+lsoutput.txt
+Unix Notes
+Unix Notes~
+Unix.txt

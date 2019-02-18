@@ -1,0 +1,35 @@
+Unix|Linux Class notes
+
+
+Hw 1:
+
+Type uname -a post to d2l by 1/19
+
+____________________
+
+ls lists files
+
+ls can be a precursor for some commands
+
+lsusb lists usb devices
+
+lspcI lists pci device
+
+
+__
+
+Everything in the PC is part of the fole system in 
+(GNU)Linux/Unix
+	- Richard Stallman
+		-emacs
+		-gcc
+		
+	struct
+	
+	
+	
+	vs 
+	
+	
+	my struct
+

@@ -1,0 +1,297 @@
+Linux Notes because its hard to access spaces in terminal
+
+Programming-Library-Libusb1.0
+pwd
+	where you currently are
+cp is copy
+	cp test.txt two.txt
+	test.txt two.txt
+to rename a file is mv, 
+	mv test.txt one.txt
+	one.txt two.txt
+cp and mv can be used to add files together
+	cp one.txt two.txt three.txt four.txt
+cat, look at the contents of a file
+	cat one.txt
+	Hellow World!
+cat one.txt > four.txt
+cat two.txt>>four.txt
+cat three.txt>>four.txt
+cat four.txt
+	Hellow World!
+../ allows  you to go up a folder
+../../../ three folders
+ls ../../../
+	nate
+cp ../Python/../Documents
+cp /home/nate/output.txt ./
+	this is where file is go get it.
+ln -s cool.txt one.txt
+	ls
+ls -a
+la -l
+nate@nate-1025C:~/Documents/UNIX$ cd ..
+nate@nate-1025C:~/Documents$ mkdir Example
+nate@nate-1025C:~/Documents$ cd Example
+nate@nate-1025C:~/Documents/Example$ ln -s ../UNIX/one.txt one.txt
+nate@nate-1025C:~/Documents/Example$ ls
+one.txt
+nate@nate-1025C:~/Documents/Example$ la -l
+total 0
+lrwxrwxrwx 1 nate nate 15 Jan 31 09:58 one.txt -> ../UNIX/one.txt
+nate@nate-1025C:~/Documents/Example$ ls -a
+.  ..  one.txt
+usr/bin tends to be user executables, things you can run
+securely copying file over network, scp
+
+filecopy
+	-cp
+wencode->uudecode
+
+#!how to send mail!#
+	
+Drives are /sd of some kind(sda,sd,sdal,sda2,sda3,etc)
+
+system Monitor, view memory space and cpu usage.
+
+dd command disk duplicate. 	
+{
+ebcdic alternative to ascii
+count=blocks
+ibs = bytes
+if = FILE, read from file instead of stdin
+iflag=FLAG
+of = write to file instead of stdout
+}
+i want to make a bootable thumdrive for linux
+sudo dd if=./ubuntu.iso of=/dev/sbd bs=8129
+example^.^
+
+mkfs make filesystem
+fsck check your filsystem
+
+fund / dev/sda1
+
+nate@nate-1025C:~/Documents/UNIX$ ls
+copyimage.py   gsam2.jpg      myls      shutil      two.txt
+copyimage.pyc  gsm.jpg        myls.cpp  simple.cpp  Unix Notes
+examples       imagecopy.py   myls.o    simple.exe  Unix Notes~
+gc2.jpg        imagecopy.pyc  one.txt   sys         Unix test 2-12-17
+glob           lsoutput.txt   os        three.txt   Unix.txt
+nate@nate-1025C:~/Documents/UNIX$ nano chmod 667 three.txt
+nate@nate-1025C:~/Documents/UNIX$ chmod 667 three.txt
+nate@nate-1025C:~/Documents/UNIX$ ls -l
+total 9868
+//shows three.txt as executable 
+-rw-rw-r-- 1 nate nate    1697 Feb  7 11:39 Unix.txt
+nate@nate-1025C:~/Documents/UNIX$ mv one.txt four.txt
+nate@nate-1025C:~/Documents/UNIX$ ln one.txt cool.txt
+ln: failed to access 'one.txt': No such file or directory
+nate@nate-1025C:~/Documents/UNIX$ nano three.txt
+//change three.txt to ls -la
+nate@nate-1025C:~/Documents/UNIX$ ./three.txt
+bash: ./three.txt: Permission denied
+nate@nate-1025C:~/Documents/UNIX$ chmod 777 three.txt
+//give everyone changemode abiliy, unadvised
+nate@nate-1025C:~/Documents/UNIX$ ./three.txt
+total 9884
+//prints ls -la
+
+
+
+chmod 664 return code to rw-:rw-:rw-
+chmod u+x //change mode for user to executable
+sudo chmod o+r //chane mode for everyone to readonly
+whoami tells you who you are
+
+sudo passwd //changes unix password for yourself
+sudo passwd username // changes unix password for the user
+
+dmesg | grep -i usb //looks at usb history on computer -i removes case sensitivity
+pdftotext changes pdf to text
+grep -i (search word) (location)
+wget www.site.place
+` back quoting allows you to run a command in a command.
+
+grep is essentially the search command for linux
+C code
+
+gcc -----.exe
+
+lint - 
+
+formatting - 
+
+gprof - 
+
+strip - debust sourcecode from executable
+
+cp copy stuff somehwere
+
+backup zip file
+
+lsmod - Kernel added on objects
+
+Commands that are fun
+
+dd
+
+df
+-shows disk or file usage
+du
+-estimate file space
+-Summarize disk usage of the set of FILEs, recursively for directories.
+
+date
+-shows the date
+
+----
+Startup scripts  - if you change something here it will make your changes permanent
+
+
+echo $PATH - shows the path for each main location
+-nate@nate-1025C:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+(vv windows vv)
+%PATH
+(^^ Windows ^^)
+
+
+nate@nate-1025C:~$ prooj=true
+nate@nate-1025C:~$ echo $prooj
+true
+nate@nate-1025C:~$ export $prooj
+nate@nate-1025C:~$ export proof=false
+nate@nate-1025C:~$ echo $proof
+false
+ 
+ 
+ env && export
+ - Both allow you to take a value and keep it over multiple prompts.
+ my
+ k4dirstat - helps show the size of files in a directory
+ 
+ tape archive -not a command
+ - allows you to backup files onto tapes using tar
+ 
+nate@nate-1025C:~/Documents/UNIX$ tar -cf examples.tar examples
+nate@nate-1025C:~/Documents/UNIX$ ls *tar
+examples.tar
+
+
+zip
+- gzip or zipfile liple zip welsh
+- Lossless, it takes up way less space than the average file
+- it essentially goes through each file in the main file and zips them all together.
+- the zip has breathed new life into the tape archive because it compresses the entire archive and loses less data
+- Compressed - uses a zip library over a browser to send information using less bytes
+
+tar.gz
+-to get to the file you must unzip then untar it
+
+ifconfig (internet family configuration)
+-
+
+iwlist 
+-
+
+WEP
+- Wifi Encryption Protection
+WPA
+- 
+WPS
+- WiFi Protrection Service
+PSK
+- Pre Shared Key
+AES
+- encryption software that allows your password hidden, highly reccomended for 
+phones because its the only thing usually your phone can handle.
+
+All routers come up with their own ip addresses.
+LAN - Local Area Network
+WAN - Wide Area Network
+
+WAT - 
+		
+DNS - Domain Name Server
+ping 
+- you can ping an ip address
+to go outside your DNS has to go to an ISP and that goes to a root NS
+
+nslookup
+nate@XenialMachine:~$ nslookup
+> google.com
+Server:		127.0.1.1
+Address:	127.0.1.1#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 216.58.217.46
+traceroute
+nate@XenialMachine:~$ traceroute www.google.com
+traceroute to www.google.com (216.58.217.36), 64 hops max
+  1   72.166.232.1  2.709ms  1.894ms  1.623ms 
+  2   192.168.0.180  2.135ms  *  3.370ms 
+  3   65.117.253.217  7.872ms  7.943ms  8.418ms 
+  4   67.14.24.93  14.736ms  8.680ms  9.070ms 
+  5   67.134.166.226  61.717ms  59.620ms  51.666ms 
+  6   72.14.234.57  9.418ms  8.706ms  8.884ms 
+  7   209.85.250.255  10.200ms  9.467ms  9.944ms 
+  8   216.58.217.36  8.391ms  9.310ms  8.957ms 
+the traceroute allows you to find many ip's and then can nslookup that ip to find who owns that ip.
+
+inputattach 
+- can be used to attach a device to the computer.s
+google-chrome- -- kiosk sitename it opens webpage in kiosk mode (a page with a limited amount of vision)
+Careful with these commands
+{
+insmod
+
+rmmod
+
+}
+
+LAMP stands for Linux, Apache, Mysql, Php/Perl
+
+
+to chage the file test.txt from rwxrwxrwx to rwxr xr x you would use sudo chmod 755 test.txt
+
+Everything except swap space in Unix System is part of the Root file system
+
+grep -i test *.txt shows all files parts that have the word "test" in a case sensitve way.
+
+the permission switches conceptually stand for  the users, group, everyone.
+
+the folder . or ./ is the current folder
+
+date is used to set the date of the computer
+
+swapoff and swapon is used to turn swap storage on or off
+
+the command rm -R can be used to delete a directory and its contents
+
+more can pause when the screen is full
+
+chown changes ownership of a file, ownership of a serial terminal, ownership of a folder
+
+dd is a command that enables you to make a copy of a disk
+
+du -h shows hw much disk space is used in a way humans can understand
+
+uname -a will provide the Version information about linux operating system
+
+mkfs is used to make a file system
+
+ln can be used to make hard and soft links
+
+using Unix mout ot make a disk drive part of the root file system
+
+dmesg | tail shows the last ten lines of the system messages
+
+the cat command is useful for dumping configuration files to the screen, looking at an output from a serial device, seeing the content of any file in the system
+
+mv is used to move files from one location to another
+
+linux operates on almost any processesor its usually one of the first os ported to new hardware.
+
+Just Blaze It 4/20 69

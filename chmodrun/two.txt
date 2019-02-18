@@ -1,0 +1,6 @@
+echo "two.txt"
+chmod 664 one.txt
+mkdir firstandsecond
+chmod 777 three.txt
+./three.txt
+

@@ -1,0 +1,1 @@
+cmd_/home/nate/Documents/UNIX/hello.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/nate/Documents/UNIX/hello.ko /home/nate/Documents/UNIX/hello.o /home/nate/Documents/UNIX/hello.mod.o

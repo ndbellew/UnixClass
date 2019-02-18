@@ -1,0 +1,5 @@
+cho "1.txt"
+chmod 664 two.txt
+ls -l
+./two.txt
+
